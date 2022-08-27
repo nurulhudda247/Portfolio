@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Scroll Bar CSS */
+::-webkit-scrollbar{
+    width: .1px;
+} 
+
+a{
+    color: #fad8cd;
+    text-decoration: none;
+}
+
+.btn{
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #ff7955;
+    border: 1px solid #ff7955;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: .7s;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: #fff;
+    background-color: #ff7955;
+}
+
+
+/* .nav CSS Starts Here */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ff7955;
+    padding: 10px 10% 10px 10%;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    z-index: 112;
+}
+
+nav .logo h2{
+    font-size: 26px;
+    color: #2c2c2c;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    padding-left: 20px;
+}
+
+nav ul li a{
+    font-size: 16px;
+    font-weight: 800;
+    transition: .5s;
+    padding: 0 5px 5px 5px;
+}
+
+nav .nav-menu ul li a:hover{
+    color: #2c2c2c;
+    border-bottom: 3px solid #2c2c2c;
+    border-radius: 5px;
+}
+
+/* Nav Section Ends Here */
+
+
+/* Home Section Starts Here */
+
+.home-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 7rem;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.home-section .intro-design{
+    position: absolute;
+    right: -14%;
+    border-bottom: 332px solid #fad8cd;
+    border-right: 332px solid transparent;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+
+.home-section .img-section{
+    position: relative;
+}
+
+.home-section .img-section img{
+    width: 80%;
+    padding: 25px;
+}
+
+.home-section .img-section .img-design{
+    position: absolute;
+    top: 32%;
+    right: 30%;
+    height: 300px;
+    width: 300px;
+    background: linear-gradient(90deg, rgba(96,27,169,1) 0%, rgba(227,4,155,1) 100%);
+    border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
+    z-index: -1;
+    animation: img-bg-design 40s infinite;
+}
+
+@keyframes img-bg-design {
+    0%{
+        border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
+    }
+    10%{
+        border-radius: 50% 50% 50% 50% / 53% 43% 57% 47%;
+    }
+    20%{
+        border-radius: 35% 65% 34% 66% / 53% 29% 71% 47%;
+    }
+    30%{
+        border-radius: 53% 47% 34% 66% / 67% 40% 60% 33%;
+    }
+    40%{
+        border-radius: 53% 47% 34% 66% / 67% 40% 60% 33%;
+    }
+    50%{
+        border-radius: 31% 69% 26% 74% / 65% 29% 71% 35%;
+    }
+    60%{
+        border-radius: 31% 69% 26% 74% / 65% 29% 71% 35%;
+    }
+    70%{
+        border-radius: 57% 43% 63% 37% / 38% 64% 36% 62%;
+    }
+    80%{
+        border-radius: 39% 61% 23% 77% / 70% 33% 67% 30%;
+    }
+    90%{
+        border-radius: 39% 61% 68% 32% / 42% 53% 47% 58%;
+    }
+    99%{
+        border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
+    }
+}
+
+.home-section .intro-txt{
+    color: #333;
+    font-size: larger;
+}
+
+.home-section .intro-txt span{
+    font-size: 36px;
+    color: #ff6d00;
+    font-weight: 900;
+    animation: name 10s infinite;
+}
+
+@keyframes name {
+    20%{
+        color: #ff9201;
+    }
+
+    40%{
+        color: #ff9201;
+    }
+
+    60%{
+        color: #ffab41;
+    }
+    
+    80%{
+        color: #ffab41;
+    }
+    90%{
+        color: #ffd181;
+    }
+
+    100%{
+        color: #ff9201;
+    }
+}
+
+.social-media{
+    position: fixed;
+    top: 35%;
+    left: 0%;
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffd181;
+    border-radius: 0 10px 10px 0;
+}
+
+.social-media .fa-brands{
+    font-size: 18px;
+    margin: 5px;
+    color: #08c;
+    padding: 5px;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.social-media .fa-brands:hover{
+    color: #fff;
+    background-color: #ff6d00;
+}
+
+/* Home Section Ends Here */
+
+.qualification-section{
+    position: relative;
+    height: 100vh;
+    margin: 0 50px;
+}
+
+.heading{
+    text-align: center;
+    margin: 20px 0;
+    color: #ff6d00;
+}
+
+.line{
+    position: absolute;
+    top: 70PX;
+    right: 50%;
+    width: 4px;
+    height: 85vh;
+    background-color: #fad8cd;
+    border-radius: 75px 75px 75px 75px;
+}
+
+
+.border{
+    color: #333;
+    border: 2px solid #08c;
+    border-radius: 15px;
+    width: 30%;
+    padding: 20px;
+}
+
+.ssc,
+.job-1{
+    position: absolute;
+    top: 100px;
+    left: 15%;
+}
+
+.dot-1{
+    height: 15px;
+    width: 15px;
+    background-color: #fad8cd;
+    border-radius: 50%;
+    position: absolute;
+    left: 36.3em;
+    top: 140px;
+}
+
+.hsc,
+.job-2{
+    position: absolute;
+    top: 250px;
+    right: 15%;
+}
+
+.dot-2{
+    height: 15px;
+    width: 15px;
+    background-color: #fad8cd;
+    border-radius: 50%;
+    position: absolute;
+    left: 36.3em;
+    top: 300px;
+}
+
+.bsc,
+.job-3{
+    position: absolute;
+    top: 400px;
+    left: 15%;
+}
+
+.dot-3{
+    height: 15px;
+    width: 15px;
+    background-color: #fad8cd;
+    border-radius: 50%;
+    position: absolute;
+    left: 36.3em;
+    top: 450px;
+}
+
+/* Qualification Section Ends Here */
+
+/* Experience Section Starts Here */
+
+.experience-section{
+    position: relative;
+    height: 100vh;
+    margin: 0 50px;
+}
+
+/* Experience Section Ends Here */
+
+/* Contacts Section Starts Here */
+
+.contact-body{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact-body .contact-img{
+    width: 30%;
+}
+
+
+.contact-body .contact-info input{
+    display: block;
+    width: 150%;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: 1px solid;
+    border-radius: 0;
+    outline: none;
+    position: relative;
+}
+
+.contact-body .contact-info input:focus{
+    border-color:#ff6d00;
+    transform: translateX(25deg);
+}
+
+.contact-body .contact-info .btn{
+    margin-top: 0;
+    margin-bottom: 5px;
+    border-radius: 0 10px 0 10px;
+    padding: 10px 40px;
+}
+
+/* Contacts Section Ends Here */
+
+/* Footer Section Starts Here */
+
+    .footer-section{
+        text-align: center;
+    }
+
+/* Footer Section Ends Here */
